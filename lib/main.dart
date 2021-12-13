@@ -18,17 +18,24 @@ class Home extends StatelessWidget{
       ),
 
       body: Center(
-        child: Image(
-          image: AssetImage("assets/3426526.jpg"),
+        child: FlatButton.icon(
+          onPressed: (){
+            print("salem sif eddine");
+          },
+          icon:Icon(Icons.mail),
+          label:Text("salem"),
+          color: Colors.black26,
+          textColor: Colors.black,
+        )
         ),
-
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
         child: Text("Click"),
         backgroundColor: Colors.red[400],
       ),
-    );
+      );
+
+
 
   }
 }
